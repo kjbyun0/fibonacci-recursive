@@ -1,6 +1,23 @@
+
+
 function fibonacci(n) {
   // type your code here
+  if (n < 2)
+    return n;
+
+  return fibonacci(n-1) + fibonacci(n-2);
 }
+
+// const mem = [0, 1];
+// function fibonacci(n) {
+//   // type your code here
+//   if (n < mem.length)
+//     return mem[n];
+
+//   mem[n] = fibonacci(n-2) + fibonacci(n-1);
+//   return mem[n];
+// }
+
 
 if (require.main === module) {
   // add your own tests in here
